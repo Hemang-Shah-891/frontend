@@ -1,0 +1,81 @@
+/* ===== Layout ===== */
+.branch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.branch-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.branch-button-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ===== Icon Buttons ===== */
+.icon-button-blue {
+  color: blue;
+}
+
+.icon-button-red {
+  color: red;
+}
+
+.icon-button-blue:hover,
+.icon-button-red:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* ===== Status Styles ===== */
+.status-active {
+  color: green;
+}
+
+.status-inactive {
+  color: red;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .branch-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .branch-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .branch-actions button {
+    flex: 1;
+    min-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .branch-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .branch-actions button {
+    width: 100%;
+  }
+
+  .branch-button-label {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}

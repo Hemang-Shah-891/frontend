@@ -1,0 +1,47 @@
+/* Admin.css */
+
+/* Container styling */
+.admin-container {
+  /* background-color: #fff; */
+  min-height: 100vh;
+}
+
+/* Header */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Buttons group */
+.admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Icon spacing inside buttons */
+.admin-actions svg {
+  margin-right: 8px;
+}
+
+/* Responsive for small screens only */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .admin-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .admin-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+}

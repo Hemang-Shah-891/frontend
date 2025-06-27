@@ -1,0 +1,73 @@
+/* ===== Layout Styles ===== */
+.inventories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.inventories-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===== Buttons and Labels ===== */
+.inventories-button-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ===== Icon Button Colors ===== */
+.icon-button-blue {
+  color: blue;
+}
+
+.icon-button-red {
+  color: red;
+}
+
+.icon-button-blue:hover,
+.icon-button-red:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .inventories-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .inventories-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .inventories-actions button {
+    flex: 1;
+    min-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .inventories-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inventories-actions button {
+    width: 100%;
+  }
+
+  .inventories-button-label {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
